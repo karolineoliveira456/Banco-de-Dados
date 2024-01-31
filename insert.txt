@@ -34,7 +34,7 @@ VALUES ("Carlos", "gabinete"),
 ("Olivia", "impressora"),
 ("Bruna", "furadeira")
 
-INSERT INTO projetos(nome_projeto, descricao_projeto, id_dev)
+INSERT INTO projetos(nome_projetos, desc_projetos, id_dev)
 VALUES ("projeto energia limpa", "projeto para transicao de energia renovavel em comunidades rurais", 7),
 ("API de Magic", "api para fotos e fatos de magic", 5),
 ("Projeto ecoVida", "projeto promove praticas sustentaveis", 2),

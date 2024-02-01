@@ -1,0 +1,21 @@
+ SELECT nome_dev FROM desenvolvedores
+ 
+ SELECT nome, tipo FROM equipamentos 
+ 
+ SELECT nome_projetos, desc_projetos FROM projetos
+ 
+ SELECT nome FROM clientes
+ 
+ SELECT nome_dev, cargo_dev FROM desenvolvedores
+ 
+ SELECT tipo FROM equipamentos
+ 
+ SELECT desenvolvedores.nome_dev, projetos.nome_projetos FROM projetos INNER JOIN desenvolvedores ON projetos.id_dev = desenvolvedores.id_dev WHERE desenvolvedores.nome_dev LIKE 'Laura%'
+ 
+ SELECT nome, data_cadastro FROM clientes WHERE data_cadastro LIKE '10/05/2015%'
+ 
+ SELECT id_chamado, descricao FROM chamados
+ 
+ SELECT tipo FROM equipamentos
+
+ SELECT desenvolvedores.nome_dev, projetos.nome_projetos FROM projetos INNER JOIN desenvolvedores ON desenvolvedores.id_dev = projetos.id_dev WHERE desenvolvedores.nome_dev LIKE 'Maria%

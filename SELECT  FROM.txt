@@ -1,0 +1,11 @@
+SELECT * FROM projetos
+SELECT nome_dev, cargo_dev FROM desenvolvedores
+SELECT desc_projetos, nome_projetos FROM projetos
+SELECT nome, email, data_cadastro FROM clientes
+SELECT id_chamado, descricao FROM chamados 
+SELECT nome, email FROM clientes WHERE nome LIKE 'karoline%'
+SELECT cargo_dev FROM desenvolvedores
+SELECT nome_dev, cargo_dev FROM desenvolvedores WHERE cargo_dev LIKE 'QA%'
+SELECT id_cliente, descricao FROM chamados
+SELECT nome_projetos, desc_projetos FROM projetos
+SELECT nome_projetos, desc_projetos FROM projetos WHERE nome_projetos LIKE 'cidade%'

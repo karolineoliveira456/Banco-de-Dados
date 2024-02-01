@@ -47,13 +47,13 @@ VALUES ("projeto energia limpa", "projeto para transicao de energia renovavel em
 ("projeto alimentacao sustentavel", "projeto de incentivo a agricultura organica e alimentacao saudavel", 4)
 
 INSERT INTO chamados(id_cliente, descricao, id_dev)
-VALUES ("", "", "")
-("", "", "")
-("", "", "")
-("", "", "")
-("", "", "")
-("", "", "")
-("", "", "")
-("", "", "")
-("", "", "")
-("", "", "")
+VALUES (1, "problema na rede", 10),
+(2, "problema na conexao", 9),
+(3, "falta de pagamento", 8),
+(4, "problema no gas do ar condicionado", 7),
+(5, "problema no sistema", 6),
+(6, "problema na rede", 5),
+(7, "problema no aparelho", 4),
+(8, "problema na borracha da geladeira", 3),
+(9, "problema na conexao", 2),
+(10, "problema na rede", 1)

@@ -1,0 +1,27 @@
+INSERT INTO medicamento(nome, fabricante, preco, quantidade)
+VALUES ("paracetamol", "Johnson & Johnson", 5.50, 100),
+("Omeprazol", "AstraZeneca", 7.50, 80),
+("Dipirona", "Sanofi", 4.75, 200),
+("Amoxicilina", "Pfizer", 81.50, 40),
+("Ibuprofeno", "Bayer", 7.80, 10)
+
+INSERT INTO cliente(nome_cliente, endereco, email, telefone)
+VALUES ("karoline", "av joao alouysio algayer 1050", "karolsenacrs@gmail.com", "51-98437-5956"),
+("alice", "av integracao 90", "alice23@gmail.com", "51-99376-5984"), 
+("maria", "av independencia 456", "mariasilva@hotmail.com", "51-98843-9596"),
+("tais", "rua pottenstein 145", "taholiveira@yahoo.com", "51-99476-5946"),
+("jeniffer", "rua John Kennedy 60", "jennisouza@gmail.com", "51-98735-5447");
+
+INSERT INTO fornecedor(nome, endereco, telefone) 
+VALUES ("amanda", "av presidente lucena 56", "51-98369-5975"), 
+("luisa", "rua monique 245", "51-98069-4538"),
+("sophia", "av sao geraldo 78", "51-98608-7487"),
+("jamile", "av sao borja 768", "51-99654-9869"),
+("roberta", "rua amadeo rossi 90", "51-98064-8279")
+
+INSERT INTO venda(data_)
+VALUES ("2023-08-24"),
+("2024-01-23"),
+("2023-07-22"),
+("2024-01-23"),
+("2023-10-21")

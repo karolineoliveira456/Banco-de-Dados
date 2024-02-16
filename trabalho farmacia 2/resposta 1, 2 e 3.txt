@@ -28,3 +28,6 @@ VALUES
 ("paulo", 3),
 ("gaby", 4),
 ("vitor", 5),
+
+ALTER TABLE funcionario ADD id_setor INT; FK_setor
+FOREIGN KEY setor REFERENCES setor(id_setor); = para criar a foreign key.

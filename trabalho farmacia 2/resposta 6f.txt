@@ -1,0 +1,42 @@
+6) a)
+ALTER TABLE cliente
+ADD renda DECIMAL(10,2);
+
+SELECT MAX(renda)
+FROM cliente
+
+SELECT MIN(renda)
+FROM cliente
+
+SELECT AVG(renda)
+FROM cliente
+
+6) b)  OK
+SELECT MAX(preco)
+FROM medicamento
+
+SELECT MIN(preco)
+FROM medicamento
+
+SELECT AVG(preco)
+FROM medicamento
+
+6) c)
+SELECT MAX
+FROM
+
+SELECT MIN
+FROM
+
+SELECT AVG
+FROM
+
+6) d)
+SELECT MAX(salario)
+FROM funcionario
+
+SELECT MIN(salario)
+FROM funcionario
+
+SELECT AVG(salario)
+FROM funcionario

@@ -1,0 +1,107 @@
+1)
+SELECT * FROM medicamento WHERE quantidade < 100
+
+2)
+SELECT medicamento.nome FROM venda 
+INNER JOIN medicamento ON medicamento.id_medicamento = venda.id_medicamento
+WHERE venda.id_venda BETWEEN '2023-11-01' AND CURRENT_DATE
+
+3)
+ALTER TABLE medicamento ADD vencimento DATE;
+
+UPDATE medicamento 
+SET vencimento = '2024-02-14' 
+WHERE id_medicamento = 5;
+
+SELECT nome, vencimento FROM medicamento 
+WHERE vencimento < CURRENT_DATE;
+
+4)
+UPDATE medicamento 
+SET quantidade = 0 
+WHERE id_medicamento = 5;
+
+SELECT nome, quantidade
+FROM medicamento
+WHERE quantidade <= 0;
+
+5)
+SELECT cliente.nome_cliente,
+medicamento.nome
+FROM venda
+
+INNER JOIN cliente
+ON cliente.id_cliente = venda.id_cliente
+
+INNER JOIN medicamento
+ON medicamento.id_medicamento = venda.id_medicamento
+
+WHERE cliente.id_cliente = 5
+
+6)
+ALTER TABLE venda ADD valor DECIMAL (10,2);
+
+UPDATE venda 
+SET valor = 150.00
+WHERE id_venda = 5;
+
+SELECT SUM(valor) AS Total
+FROM venda WHERE data_venda < CURRENT_DATE
+
+7)
+SELECT cliente.nome FROM venda 
+INNER JOIN cliente ON cliente.id_cliente = venda.id_cliente
+WHERE venda.valor > 150.00;
+
+8)
+INSERT INTO venda (data, id_medicamento, id_cliente, preco)
+VALUES ('2024-02-08', 5, 5, 100.00);
+
+COM O NOME DO CLIENTE:
+SELECT cliente.nome_cliente AS 'Cliente com mais compras'
+FROM venda
+INNER JOIN cliente
+ON cliente.id_cliente = venda.id_cliente
+GROUP BY venda.id_cliente
+HAVING COUNT(*) > 1
+
+versão simples:
+SELECT id_cliente AS 'Cliente com mais compras'
+FROM venda
+GROUP BY id_cliente
+HAVING COUNT(*) > 1
+
+9)
+ALTER TABLE fornecedor
+ADD medicamentos_vendidos INT;
+
+UPDATE fornecedor
+SET medicamentos_vendidos = 12
+WHERE id_forn = 2
+
+SELECT nome_fornecedor, 
+MAX(medicamentos_vendidos) 
+AS 'Medicamentos Vendidos'
+FROM fornecedor
+
+10)
+ALTER TABLE fornecedor
+ADD nome_medicamento VARCHAR(50);
+
+UPDATE fornecedor
+SET nome_medicamento = 'Rivotril'
+WHERE id_fornecedor = 2
+
+SELECT nome
+FROM fornecedor
+WHERE nome_medicamento = 'Rivotril
+
+11)
+SELECT SUM(valor)
+FROM venda
+WHERE data_venda BETWEEN '2023-03-01' AND '2023-03-30'
+
+12)
+SELECT MAX(preco)
+FROM medicamento
+WHERE categoria = '1'
